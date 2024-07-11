@@ -44,4 +44,9 @@ public class ProductService {
 repo.deleteById(id);
 
     }
+
+
+    public List<Product> searchProducts(String keyword) {
+        return repo.searchProducts(keyword);
+    }
 }
